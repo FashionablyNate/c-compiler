@@ -4,7 +4,7 @@ DBGFLAGS := -g
 
 # linker command and flags
 LD = ld
-LDFlags = -macos_version_min 14.0.0 -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start -arch arm64
+LDFlags = -macos_version_min 14.0.0 -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _main -arch arm64
 
 # where should stuff go?
 OBJ_PATH := obj
